@@ -1,0 +1,14 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+   
+    color: #c4c9f6;
+    text-align: center;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+.centercontent, ol, button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,1 +1,0 @@
-# timed-code-quiz-homework
