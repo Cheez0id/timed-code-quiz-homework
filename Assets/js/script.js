@@ -35,6 +35,15 @@
 var questionBank = ["question1", "question2", "question3", "question4", "question5"]
 console.log (questionBank.length)
 
+var quizbox = document.querySelector (".quizbox")
+// I want to make a quizbox that will display each of the questions when interacted with
+quizbox.addEventListener("click", function() {
+(console.log ("oh happy day"))
+})
+
+
+
+
 var form1 = document.querySelector (".form1") 
 var form2 = document.querySelector (".form2")
 var question1 = document.querySelector ("#question1")
@@ -43,7 +52,7 @@ var question3 = document.querySelector ("#question3")
 var question4 = document.querySelector ("#question4")
 var question5 = document.querySelector ("#question5")
 
-//TODO: MAKE A LOOP THAT SHOWS EACH QUESTION IN THE BANK AS QUESTIONS ARE ANSWERED
+//TODO: MAKE A LOOP THAT SHOWS EACH QUESTION IN THE BANK AS QUESTIONS
 for(var i = 0; i < questionBank.length; i++) {
   
 }
