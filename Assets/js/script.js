@@ -32,15 +32,39 @@
 
 //BEGINNING OF THE CODE
 
+var questionBank = ["question1", "question2", "question3", "question4", "question5"]
+console.log (questionBank.length)
+
 var form1 = document.querySelector (".form1") 
 var form2 = document.querySelector (".form2")
 
 form1.childNodes
 console.log (form1.childNodes[3][0])
 
-function showquestion2 () {
-  form1.style.display = "none"
+function hidequestion1 () {
+  form1.style.visibility = "hidden";
 }
+
+function hidequestion2 () {
+  form2.style.visibility = "hidden";
+}
+
+for(var i = 0; i < questionBank.length; i++) {
+  var question = questionBank[i].question
+  var choices = questionBank[i].choices
+  var answers = questionBank[i].answer
+}
+
+
+
+
+// TODO: create a function that removes time from the timer when the wrong answer is given
+// function incorrectanswer () {
+//   form1.style.visibility = "hidden";
+//   return;
+// }
+
+
 
 
 // //form1
