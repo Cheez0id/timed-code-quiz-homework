@@ -32,6 +32,17 @@
 
 //BEGINNING OF THE CODE
 
+var timeleft = 60;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("time").innerHTML = "Finished";
+  } else {
+    document.getElementById("time").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
+
 var questionBank = ["question1", "question2", "question3", "question4", "question5"]
 console.log (questionBank.length)
 
@@ -43,8 +54,9 @@ console.log (document.getElementById("quizbox"));
 // I want to make a quizbox that will display each of the questions when interacted with
 quizbox.addEventListener("click", function() {
 (console.log ("oh happy day, the quizbox was clicked.")); 
-document.getElementById("quizbox"); quizbox.appendChild.text.content ("hello!")
+quizbox.appendChild(question1)
 })
+
 // // get reference to the section tag.
 // // make a new paragraph tag.
 // var paragraph = document.createElement("p");
@@ -65,12 +77,13 @@ var question4 = document.querySelector ("#question4")
 var question5 = document.querySelector ("#question5")
 
 //TODO: MAKE A LOOP THAT SHOWS EACH QUESTION IN THE BANK AS QUESTIONS
-for(var i = 0; i < questionBank.length; i++) {
-  
-}
+
+
 
 function hidequestion1 () {
   question1.style.visibility = "hidden";
+  quizbox.appendChild(question2)
+
 }
 function hidequestion2 () {
   question2.style.visibility = "hidden";
