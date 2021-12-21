@@ -47,9 +47,17 @@ var question5 = document.querySelector ("#question5")
 function hidequestion1 () {
   question1.style.visibility = "hidden";
 }
-
 function hidequestion2 () {
   question2.style.visibility = "hidden";
+}
+function hidequestion3 () {
+  question3.style.visibility = "hidden";
+}
+function hidequestion4 () {
+  question4.style.visibility = "hidden";
+}
+function hidequestion5 () {
+  question5.style.visibility = "hidden";
 }
 
 for(var i = 0; i < questionBank.length; i++) {
