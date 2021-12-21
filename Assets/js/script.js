@@ -36,10 +36,22 @@ var questionBank = ["question1", "question2", "question3", "question4", "questio
 console.log (questionBank.length)
 
 var quizbox = document.querySelector (".quizbox")
+
+console.log (document.getElementById("quizbox"));
+
+
 // I want to make a quizbox that will display each of the questions when interacted with
 quizbox.addEventListener("click", function() {
-(console.log ("oh happy day"))
+(console.log ("oh happy day, the quizbox was clicked.")); 
+document.getElementById("quizbox"); quizbox.appendChild.text.content ("hello!")
 })
+// // get reference to the section tag.
+// // make a new paragraph tag.
+// var paragraph = document.createElement("p");
+// // add some text inside paragraph tag.
+// paragraph.textContent = "This is another paragraph";
+// // add paragrapgh inside div tag.
+// div.appendChild(paragraph);
 
 
 
