@@ -37,23 +37,25 @@ console.log (questionBank.length)
 
 var form1 = document.querySelector (".form1") 
 var form2 = document.querySelector (".form2")
+var question1 = document.querySelector ("#question1")
+var question2 = document.querySelector ("#question2")
+var question3 = document.querySelector ("#question3")
+var question4 = document.querySelector ("#question4")
+var question5 = document.querySelector ("#question5")
 
-form1.childNodes
-console.log (form1.childNodes[3][0])
 
 function hidequestion1 () {
-  form1.style.visibility = "hidden";
+  question1.style.visibility = "hidden";
 }
 
 function hidequestion2 () {
-  form2.style.visibility = "hidden";
+  question2.style.visibility = "hidden";
 }
 
 for(var i = 0; i < questionBank.length; i++) {
   var question = questionBank[i].question
-  var choices = questionBank[i].choices
-  var answers = questionBank[i].answer
 }
+
 
 
 
