@@ -19,7 +19,7 @@
     font-size: 200%;
 }
 
-.box {   
+.headerbox {   
     background-color: black;
     margin-left: auto;
     margin-right: auto;  
@@ -28,8 +28,23 @@
     border: 5px solid rgb(83, 52, 133);
     border-radius: 5%;
     font-size: 150%;
+    padding: 25px;
+    }
+
+.box {   
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 100px;
+    width: 75%;
+    border: 5px solid rgb(83, 52, 133);
+    padding: 25px;
+    border-radius: 5%;
+    font-size: 150%;
     height:400px;
     }
+
+    
     
     .questionsbox {   
        display: none;
