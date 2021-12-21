@@ -23,23 +23,23 @@
 
 <section class="questionsbox">
    <div class="centercontent" id = "question1"> 
-    <h1>THIS WILL BE OUR FIRST QUESTION: What is an #?</h1>    
+    <h1>FIRST QUESTION: What is an #?</h1>    
         <form> 
              <ol>
            <button id="button1" type = "button" class ="correct" onclick="hidequestion1()"><li>it is an identifier</li></button>
-           <button id="button2"><li>it is not an identifier</li></button>
-           <button id="button3" ><li>it is sortof an identifier</li></button>
-           <button id="button4" ><li>it is sometimes an identifier</li></button>
+           <button id="button2" type = "button" class ="incorrect" onclick="hidequestion1()"><li>it is not an identifier</li></button>
+           <button id="button3" type = "button" class ="incorrect" onclick="hidequestion1()"><li>it is sortof an identifier</li></button>
+           <button id="button4" type = "button" class ="incorrect" onclick="hidequestion1()"><li>it is sometimes an identifier</li></button>
        </ol>
     </form>
     </div>
 
     <div class="centercontent" id = "question2"> 
-        <h1>THIS WILL BE OUR SECOND QUESTION: What is a #?</h1>    
+        <h1>SECOND QUESTION: What is a . ?</h1>    
             <form> 
             <ol>
-            <button id="button1" type = "button" onclick="hidequestion2()"><li>it is an identifier</li></button>
-            <button id="button2" class=><li>it is not an identifier</li></button>
+            <button id="button1" type = "button" onclick="hidequestion2()"><li>it is a class</li></button>
+            <button id="button2" class=><li>it is the same as an identifier</li></button>
             <button id="button3" class=><li>it is sortof an identifier</li></button>
             <button id="button4" class=><li>it is sometimes an identifier</li></button>
            </ol>
@@ -82,6 +82,11 @@
             </ol>
             </form>
             </div> 
+            <div class="centercontent" id = "END"> 
+                <h1>NO MORE QUESTIONS</h1> 
+                </div>
+
+
 
     <script src="Assets/js/script.js"></script>
 </section> 
