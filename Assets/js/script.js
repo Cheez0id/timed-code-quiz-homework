@@ -32,16 +32,6 @@
 
 //BEGINNING OF THE CODE
 
-var timeleft = 60;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-    document.getElementById("time").innerHTML = "Finished";
-  } else {
-    document.getElementById("time").innerHTML = timeleft + " seconds remaining";
-  }
-  timeleft -= 1;
-}, 1000);
 
 var questionBank = ["question1", "question2", "question3", "question4", "question5"]
 console.log (questionBank.length)
@@ -52,9 +42,22 @@ console.log (document.getElementById("quizbox"));
 
 
 // I want to make a quizbox that will display each of the questions when interacted with
-quizbox.addEventListener("click", function() {
+var timeleft = 60;
+startquiz=document.getElementById("startquiz");
+startquiz.addEventListener("click", function() {
 (console.log ("oh happy day, the quizbox was clicked.")); 
-quizbox.appendChild(question1)
+
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("time").innerHTML = "Finished";
+  } else {
+    document.getElementById("time").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
+quizbox.appendChild(question1);
+// if class
 })
 
 // // get reference to the section tag.
@@ -81,9 +84,15 @@ var question5 = document.querySelector ("#question5")
 
 
 function hidequestion1 () {
-  question1.style.visibility = "hidden";
+  question1.style.display = "none";
   quizbox.appendChild(question2)
-
+  
+  // console.log (this.target.className)
+  var cl=event.target.innerHTML;
+  if (cl != "it is an "){
+    timeleft -= 10
+  }
+  console.log (cl)
 }
 function hidequestion2 () {
   question2.style.visibility = "hidden";
