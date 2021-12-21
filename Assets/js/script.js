@@ -43,6 +43,10 @@ var question3 = document.querySelector ("#question3")
 var question4 = document.querySelector ("#question4")
 var question5 = document.querySelector ("#question5")
 
+//TODO: MAKE A LOOP THAT SHOWS EACH QUESTION IN THE BANK AS QUESTIONS ARE ANSWERED
+for(var i = 0; i < questionBank.length; i++) {
+  
+}
 
 function hidequestion1 () {
   question1.style.visibility = "hidden";
@@ -60,9 +64,7 @@ function hidequestion5 () {
   question5.style.visibility = "hidden";
 }
 
-for(var i = 0; i < questionBank.length; i++) {
-  var question = questionBank[i].question
-}
+
 
 
 
