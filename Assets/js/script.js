@@ -13,6 +13,7 @@ console.log (document.getElementById("quizbox"));
 
 
 //a timer function that decreases by 10 seconds for incorrect answers.
+//TODO: when the timer runs out, END the game so that the user can not keep playing.
 var timeleft = 60;
 startquiz=document.getElementById("startquiz");
 startquiz.addEventListener("click", function() {
@@ -94,36 +95,19 @@ function hidequestion5 () {
 //END OF CODE, DISREGARD THE BELOW NOTES
 
 
-
-// TODO: create a function that removes time from the timer when the wrong answer is given
-// function incorrectanswer () {
-//   form1.style.visibility = "hidden";
-//   return;
-// }
-
-
-
-
-// //form1
-// var button1, etc.
-// function formoneChange(){ form1.getElementsByTagName("button").onclick(function(e) {
-//  form1.style.display = "none"
-//  console.log ("click?")
-// })}
-
-
+//THE BELOW SHOULD BE USED IN REFERENCE FOR CREATING THE HIGH SCORES FORM. THE FORM NEEDS TO BE CONNECTED TO LOCAL STORAGE.
 // function logEntries(freeResponse, nameInput) {
-//     // Prevent default action
-//     // event.preventDefault();
+//     Prevent default action
+//     event.preventDefault();
 //     console.log(freeResponse + nameInput);
-//     // var response = "Thank you for your submission " + nameInput.value + "! You wrote this weird stuff in the first field: " + freeResponse.value + ".";
-//       // submissionResponseEl.textContent = response;
+//     var response = "Thank you for your submission " + nameInput.value + "! You wrote this weird stuff in the first field: " + freeResponse.value + ".";
+//       submissionResponseEl.textContent = response;
 // logEntries (freeResponse, nameInput) 
 //   }
 
-// //   console.log (freeResponse + nameInput + " <-- these were put into the form");
-// // var showResponse = console.log (freeResponse + nameInput);
+// console.log (freeResponse + nameInput + " <-- these were put into the form");
+// var showResponse = console.log (freeResponse + nameInput);
 
-// // // Add listener to submit element
-// // submitButton.addEventListener("click", showResponse);
+// Add listener to submit element
+// submitButton.addEventListener("click", showResponse);
 
