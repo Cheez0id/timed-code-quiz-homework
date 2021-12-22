@@ -1,6 +1,8 @@
 
 //BEGINNING OF THE CODE
 
+//TODO: 1. KEEP SCORE OF CORRECT/INCORRECT ANSWERS (incorrect/correct classes are assigned to the buttons that can be used for this)
+//TODO: 2. CREATE FORM WHERE HIGH SCORE IS LOGGED IN A LOCAL STORAGE WITH USER INPUT INITIALS (intent to put box on index.html to show high scorer)
 
 var questionBank = ["question1", "question2", "question3", "question4", "question5"]
 console.log (questionBank.length)
@@ -10,7 +12,7 @@ var quizbox = document.querySelector (".quizbox")
 console.log (document.getElementById("quizbox"));
 
 
-// I want to make a quizbox that will display each of the questions when interacted with
+//a timer function that decreases by 10 seconds for incorrect answers.
 var timeleft = 60;
 startquiz=document.getElementById("startquiz");
 startquiz.addEventListener("click", function() {
@@ -26,7 +28,7 @@ var downloadTimer = setInterval(function(){
   timeleft -= 1;
 }, 1000);
 quizbox.appendChild(question1);
-// if class
+
 })
 
 //adding question variables individually to call to IDs created in quiz.html; this should have been done with arrays/split or something more efficient.

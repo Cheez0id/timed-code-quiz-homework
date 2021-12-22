@@ -1,6 +1,39 @@
 # timed-code-quiz-homework
- Create a timed quiz based on the homework assignment for the georgia tech bootcamp module 4 on APIs. 
+ Create a timed quiz based on the homework assignment for the georgia tech bootcamp module 4 on APIs.  NOTE: the original readme from the assignment is included here (READMEassignment.md) for reference to pertinent details.
 
+## Deployment
+The Github Page can be found here:
+https://cheez0id.github.io/timed-code-quiz-homework/
+The Github repository can be found here:
+https://github.com/Cheez0id/timed-code-quiz-homework
+
+## Homework Acceptance Criteria (received)
+
+```
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question (*finished*)
+WHEN I answer a question
+THEN I am presented with another question (*finished*)
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock (*finished*)
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over (*mostly complete*)
+WHEN the game is over
+THEN I can save my initials and my score (*incomplete*)
+```
+
+
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+
+
+===================================
  ***Here is the psudocode from Jung (instructor)***
 
  0. We need a button to start the game
