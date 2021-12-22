@@ -45,38 +45,44 @@ function hidequestion1 () {
   if (cl != "it is an identifier"){
     timeleft -= 10
   }
-  console.log (cl)
+  console.log (cl);
+  return;
 }
 function hidequestion2 () {
   question2.style.display = "none";
   quizbox.appendChild(question3)
   var cl=event.target.innerHTML;
-  if (cl != "it is a class"){
+  if (cl != "<li>it is a class</li>"){
     timeleft -= 10
   }
-  console.log (cl)
+  console.log (cl);
+  return;
 }
 function hidequestion3 () {
   question3.style.display = "none";
   quizbox.appendChild(question4)
   var cl=event.target.innerHTML;
-  if (cl != "No"){
+  if (cl != "<li>No</li>"){
     timeleft -= 10
   }
+
   console.log (cl)
+  return;
 }
 function hidequestion4 () {
   question4.style.display = "none";
   quizbox.appendChild(question5)
   var cl=event.target.innerHTML;
-  if (cl != "it is an identifier"){
+  if (cl != "content, padding, boarder, margin"){
     timeleft -= 10
   }
   console.log (cl)
+  return;
 }
 function hidequestion5 () {
   question5.style.display = "none";
   quizbox.appendChild(END)
+  return;
 }
 
 
