@@ -60,7 +60,7 @@ function hidequestion3 () {
   question3.style.display = "none";
   quizbox.appendChild(question4)
   var cl=event.target.innerHTML;
-  if (cl != "it is an identifier"){
+  if (cl != "No"){
     timeleft -= 10
   }
   console.log (cl)
