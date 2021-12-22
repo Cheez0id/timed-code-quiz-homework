@@ -7,6 +7,13 @@ https://cheez0id.github.io/timed-code-quiz-homework/
 The Github repository can be found here:
 https://github.com/Cheez0id/timed-code-quiz-homework
 
+## Screenshot
+
+The following image shows the main quiz page engaged by user:
+
+![A user clicks through an interactive coding quiz.](Assets/images/quizscreenshot.JPG)
+
+
 ## Homework Acceptance Criteria (received)
 
 ```
